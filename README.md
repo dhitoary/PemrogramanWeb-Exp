@@ -74,7 +74,7 @@ Proyek ini dikerjakan dengan mengikuti alur kerja (workflow) Git yang terstruktu
 ## Riwayat Git Log
 
 Berikut adalah screenshot dari perintah git log --graph --oneline yang menunjukkan riwayat commit serta alur kerja branching dan merge yang telah dilakukan:
-![Git Log Graph](Screenshot/Screenshot 2025-11-03 180510.png")
+![Git Log Graph](Screenshot/gitlog.png")
 
 ---
 
