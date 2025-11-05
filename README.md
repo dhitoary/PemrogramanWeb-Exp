@@ -1,6 +1,6 @@
 # Dhito Aryo Trengginas — Portofolio Praktikum Pemrograman Web
 
-[![HTML](https://img.shields.io/badge/HTML-%3E%3D5-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS-%3E%3D3.0-green.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![Live Demo](https://img.shields.io/badge/Live%20Demo-Open-green.svg)](https://raw.githack.com/dhitoary/PortofolioDhito_Prak.PW/main/DhitoAryoT_Portofolio.html)
+[![HTML](https://img.shields.io/badge/HTML-%3E%3D5-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS-%3E%3D3.0-green.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![Live Demo](https://img.shields.io/badge/Live%20Demo-Open-green.svg)](https://raw.githack.com/dhitoary/PemrogramanWeb-Exp/main/DhitoAryoT_Portofolio.html)
 
 Selamat datang! Ini adalah portofolio Pemrograman Web saya — dibuat hanya dengan HTML dan CSS.
 
