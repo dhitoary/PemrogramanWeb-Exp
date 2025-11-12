@@ -28,7 +28,6 @@ Berikut adalah daftar semua percobaan yang telah diselesaikan. Setiap percobaan 
 | **Percobaan 4** | *[Topik Percobaan 4 Nanti]* |
 | **Percobaan 5** | *[Topik Percobaan 5 Nanti]* |
 | **Percobaan 6** | *[Topik Percobaan 6 Nanti]* |
-| ... | ... |
 
 *(Repositori ini akan diperbarui seiring berjalannya praktikum)*
 
