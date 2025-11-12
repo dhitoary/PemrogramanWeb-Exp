@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arginas Labs - Creative Technology & Design Studio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Nunito', 'sans-serif'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        html { scroll-behavior: smooth; }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Nunito', 'sans-serif'] },
+                    colors: {
+                        'primary': { '500': '#14b8a6', '600': '#0d9488', '700': '#0f766e' },
+                        'secondary': '#f0fdfa', // teal-50
+                        'slate': { '900': '#0F172A' }
+                    },
+                    keyframes: {
+                        pulseBright: {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 0 0 rgba(20, 184, 166, 0.4)' },
+                            '70%': { opacity: 1, boxShadow: '0 0 0 12px rgba(20, 184, 166, 0)' },
+                        }
+                    },
+                    animation: { 'pulse-bright': 'pulseBright 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-extrabold text-primary-600">
+                Arginas Labs
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors">Layanan</a>
+                <a href="#about" class="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors">Tentang Kami</a>
+                <a href="#process" class="text-base font-medium text-gray-700 hover:text-primary-600 transition-colors">Proses</a>
+                <a href="#contact" class="bg-primary-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-primary-700 transition-colors">
+                    Mulai Proyek
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="relative min-h-[90vh] flex items-center">
+        <div class="absolute inset-0 -z-10">
+            <img src="https://strategimanajemen.net/wp-content/uploads/2013/05/building-rezise.jpg" 
+                 alt="Workspace" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10">
+            <div class="max-w-3xl text-white">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Arginas Labs Company
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-10" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+                    Arginas Labs adalah studio kreatif yang membangun website cepat, responsif, dan menarik secara visual.
+                </p>
+                <a href="#promo-cta" class="inline-block bg-primary-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-primary-700 transition duration-300 shadow-lg shadow-teal-500/30
+                                    animate-pulse-bright">
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-6">
+            <h3 class="text-center text-sm font-semibold text-gray-600 uppercase tracking-wider mb-6">Dipercaya oleh Klien & Partner Kami</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60">
+                <p class="text-3xl font-bold text-gray-400 text-center">NujuCoffe</p>
+                <p class="text-3xl font-bold text-gray-400 text-center">BukitAsam</p>
+                <p class="text-3xl font-bold text-gray-400 text-center">Apple</p>
+                <p class="text-3xl font-bold text-gray-400 text-center">Astra</p>
+                <p class="text-3xl font-bold text-gray-400 text-center">Paragon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="text-primary-600 font-semibold uppercase">Layanan Kami</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mt-2 mb-4">Solusi Digital Terintegrasi</h2>
+                <p class="text-lg text-gray-600">Dari konsep, desain, hingga live. Kami menangani semua proses agar KAMU bisa fokus pada bisnis.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-secondary p-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-100">
+                    <div class="p-3 rounded-full bg-primary-600/10 w-max mb-4 group-hover:bg-primary-600/20 transition-all">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.645 20.91l-2.094-2.093a.5.5 0 01.353-.852h9.272a.5.5 0 01.353.852l-2.094 2.093a.5.5 0 01-.707 0l-2.094-2.093a.5.5 0 01-.707 0l-2.094 2.093a.5.5 0 01-.707 0zM12 3v14"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Desain UI/UX</h3>
+                    <p class="text-gray-600">Merancang antarmuka yang intuitif dan estetik agar pengguna betah.</p>
+                </div>
+                <div class="group bg-secondary p-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-100">
+                    <div class="p-3 rounded-full bg-primary-600/10 w-max mb-4 group-hover:bg-primary-600/20 transition-all">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Web Development</h3>
+                    <p class="text-gray-600">Membangun website responsif dengan teknologi modern (React, Tailwind, dll).</p>
+                </div>
+                <div class="group bg-secondary p-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal-100">
+                    <div class="p-3 rounded-full bg-primary-600/10 w-max mb-4 group-hover:bg-primary-600/20 transition-all">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Optimasi SEO</h3>
+                    <p class="text-gray-600">Memastikan website Anda mudah ditemukan di Google oleh audiens yang tepat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="rounded-xl shadow-2xl overflow-hidden">
+                    <img src="/Judul 3/Images/1690990107427-01.jpeg" 
+                         alt="Foto Dhito Aryo, Founder Arginas Labs" class="w-full h-full object-cover">
+                </div>
+                
+                <div>
+                    <span class="text-primary-600 font-semibold uppercase">Tentang Saya</span>
+                    <h2 class="text-4xl font-extrabold text-slate-900 mt-2 mb-6">
+                        Studio Kreatif dengan Latar Belakang Teknik.
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                        Arginas Labs didirikan oleh Dhito Aryo Trengginas di Lampung, Indonesia. Kami adalah studio teknologi yang unik karena kami menggabungkan dua dunia: estetika desain yang bersih dan logika rekayasa perangkat lunak (RPL) yang efisien.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Bagi kami, website yang baik tidak hanya terlihat indah, tapi juga harus aman, cepat, dan dibangun di atas pondasi kode yang kokoh. Itulah "gaya" Arginas Labs.
+                    </p>
+                    <a href="#contact" class="bg-primary-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="text-primary-600 font-semibold uppercase">Proses Kami</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 mt-2 mb-4">Bagaimana Kami Bekerja</h2>
+                <p class="text-lg text-gray-600">Pendekatan kami terstruktur untuk memastikan hasil terbaik tanpa membuang waktu Anda.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="relative w-16 h-16 bg-primary-600 text-white flex items-center justify-center rounded-full text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Discovery</h3>
+                    <p class="text-gray-600">Kami bicara. Kamu ceritakan visi, target, dan masalah Kamu. Kami mendengarkan.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative w-16 h-16 bg-primary-600 text-white flex items-center justify-center rounded-full text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Desain & Prototyping</h3>
+                    <p class="text-gray-600">Kami membuat mockup dan prototype interaktif. Kita revisi sampai 100% pas.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative w-16 h-16 bg-primary-600 text-white flex items-center justify-center rounded-full text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Development</h3>
+                    <p class="text-gray-600">Tim kami mengubah desain menjadi kode yang bersih, cepat, dan fungsional.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative w-16 h-16 bg-primary-600 text-white flex items-center justify-center rounded-full text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Launch & Support</h3>
+                    <p class="text-gray-600">Website Kamu launch! Kami tetap ada untuk membantu maintenance atau update.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-lg text-gray-600">Bekerja sama untuk hasil yang luar biasa.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-secondary p-8 rounded-xl shadow-lg shadow-teal-100">
+                    <p class="text-xl font-medium text-gray-700 italic mb-6">"Arginas Labs benar-benar mengerti visi kami. Prosesnya cepat, desainnya modern, dan hasilnya melebihi ekspektasi. Sangat direkomendasikan!"</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://randomuser.me/api/portraits/women/11.jpg" alt="Avatar">
+                        <div>
+                            <p class="font-bold text-slate-900">Akeyla</p>
+                            <p class="text-sm text-primary-600 font-medium">Founder Apple</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-secondary p-8 rounded-xl shadow-lg shadow-teal-100">
+                    <p class="text-xl font-medium text-gray-700 italic mb-6">"Profesional, tepat waktu, dan sangat solutif. Website kami sekarang 3x lebih cepat. Terima kasih Arginas Labs!"</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://randomuser.me/api/portraits/men/12.jpg" alt="Avatar">
+                        <div>
+                            <p class="font-bold text-slate-900">Rendy Antono</p>
+                            <p class="text-sm text-primary-600 font-medium">CEO Paragon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promo-cta" class="bg-slate-900 py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-6 max-w-2xl mx-auto">
+                Siap Mewujudkan Proyek Kamu?
+            </h2>
+            <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto">
+                Jangan biarkan ide Kamu hanya menjadi ide. Hubungi kami untuk konsultasi gratis 30 menit.
+            </p>
+            <form class="flex flex-col md:flex-row max-w-lg mx-auto gap-4">
+                <input type="email" placeholder="Masukkan email Anda..." class="w-full px-5 py-3 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary-600" required>
+                <button type="submit" class="bg-primary-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap">
+                    Dapatkan Konsultasi Gratis
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-slate-400 pt-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Hubungi Kami</h2>
+                <p class="text-lg text-slate-300">Terbuka untuk kolaborasi dan proyek baru.</p>
+                <p class="text-2xl text-primary-500 font-bold mt-4">arginasGoks@gmail.com</p>
+            </div>
+            
+            <div class="border-t border-slate-700 py-8 mt-16">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm">
+                    <p class="text-slate-400 mb-4 md:mb-0">&copy; 2025 Arginas Labs. Dibuat dengan ❤️ di Lampung.</p>
+                    <div class="flex space-x-6">
+                        <a href="https://github.com/dhitoary" class="hover:text-white transition-colors">GitHub</a>
+                        <a href="https://www.instagram.com/dhitoary._" class="hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
